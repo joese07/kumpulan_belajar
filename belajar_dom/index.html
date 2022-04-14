@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="paragraf">
+      Biasanya, kalau kita pilih element berdasarkan nama tag atau attribute
+      class, akan ada lebih dari satu element yang dipilih. Nah, element yang
+      terpilih itu akan menjadi sebuah array. Kenapa? Karena kita memilih
+      sekumpulan element. Array itu akan berisi objek DOM dari element-element
+      yang terpilih. Untuk lebihs
+    </p>
+    <p class="paragraf">
+      Biasanya, kalau kita pilih element berdasarkan nama tag atau attribute
+      class, akan ada lebih dari satu element yang dipilih. Nah, element yang
+      terpilih itu akan menjadi sebuah array. Kenapa? Karena kita memilih
+      sekumpulan element. Array itu akan berisi objek DOM dari element-element
+      yang terpilih. Untuk lebihs
+    </p>
+    <p class="paragraf">
+      Biasanya, kalau kita pilih element berdasarkan nama tag atau attribute
+      class, akan ada lebih dari satu element yang dipilih. Nah, element yang
+      terpilih itu akan menjadi sebuah array. Kenapa? Karena kita memilih
+      sekumpulan element. Array itu akan berisi objek DOM dari element-element
+      yang terpilih. Untuk lebihs
+    </p>
+    <div class="app">
+      <div class="abc">
+        <div class="def">
+          <a>
+            <p class="paragraf">
+              Biasanya, kalau kita pilih element berdasarkan nama tag atau
+              attribute class, akan ada lebih dari satu element yang dipilih.
+              Nah, element yang terpilih itu akan menjadi sebuah array. Kenapa?
+              Karena kita memilih sekumpulan element. Array itu akan berisi
+              objek DOM dari element-element yang terpilih. Untuk lebihs
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-rahasia">
+      <div class="coba">
+        <p class="paragraf">
+          Biasanya, kalau kita pilih element berdasarkan nama tag atau attribute
+          class, akan ada lebih dari satu element yang dipilih. Nah, element
+          yang terpilih itu akan menjadi sebuah array. Kenapa? Karena kita
+          memilih sekumpulan element. Array itu akan berisi objek DOM dari
+          element-element yang terpilih. Untuk lebihs
+        </p>
+      </div>
+    </div>
+    <div id="app">
+      <script>
+        const tutorial = document.getElementById("app");
+        tutorial.style.fontWeight = "bold";
+        tutorial.innerText = "Tutorial Javascript";
+        tutorial.style.backgroundColor = "gold";
+        tutorial.style.padding = "10px";
+      </script>
+      <script>
+        const okparagraf = document.getElementsByClassName("paragraf");
+        setInterval(function () {
+          okparagraf[0].style.color = "red";
+          okparagraf[1].style.color = "green";
+          okparagraf[2].style.color = "blue";
+
+          setTimeout(function () {
+            okparagraf[0].style.color = "black";
+            okparagraf[1].style.color = "black";
+            okparagraf[2].style.color = "black";
+          }, 500); // 500 = 0.5 detik
+        }, 1000); // 1000 = 1 detik
+      </script>
+      <script>
+        const def = document.querySelector(".app .abc .def");
+        def.style.backgroundColor = "red";
+        def.style.height = "80px";
+      </script>
+      <script>
+        const hahaha = document.querySelector(".coba");
+        hahaha.style.color = "red";
+
+        setTimeout(function () {
+          const hilang = document.querySelector(".text-rahasia");
+          hilang.remove();
+        }, 5000);
+      </script>
+    </div>
+  </body>
+</html>

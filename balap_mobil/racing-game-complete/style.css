@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+#overlay {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.overlay-content {
+  text-align: center;
+  width: 600px;
+}
+
+.overlay-content h1 {
+  color: #77287d;
+  font-size: 48px;
+}
+
+.overlay-content button {
+  background-color: transparent;
+  border: 3px solid #77287d;
+  border-radius: 8px;
+  color: #77287d;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay-content button:hover {
+  background-color: #77287d;
+  color: #fff;
+}
+
+#app {
+  background-color: #77287d;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 600px;
+}
+
+.mobil-anda-section,
+.mobil-robot-section {
+  display: flex;
+}
+
+.kotak-posisi {
+  align-items: center;
+  background-color: #923393;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.kotak-start,
+.kotak-finish {
+  background-image: url("assets/finish.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.jalan {
+  background-image: url("assets/road.jpg");
+  position: relative;
+  width: 100px;
+}
+
+.gambar-mobil {
+  background-size: cover;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: top 1s ease-in-out;
+  width: 100px;
+}
+
+.mobil-anda-section .gambar-mobil {
+  background-image: url("assets/mobil-anda.png");
+}
+
+.mobil-robot-section .gambar-mobil {
+  background-image: url("assets/mobil-robot.png");
+}
+
+#game-control {
+  position: fixed;
+  text-align: center;
+  width: 200px;
+
+  /* Untuk ketengah */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#game-control .keterangan {
+  color: #f89c1b;
+}
+
+#game-control button {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  color: #77287d;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px 24px;
+}
+
+#game-control button:hover {
+  text-decoration: underline;
+}
+
+#game-control .angka {
+  color: #f89c1b;
+  font-size: 64px;
+}

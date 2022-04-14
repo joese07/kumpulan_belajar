@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website hasil chalenge 1 Binar Academy">
+    <meta name="keywords" content="HTML, CSS, BkctuccOnXzSN5dHGpYGkAMB">
+  <meta name="author" content="Herbras (Ibrahim NH)">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!--BS Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <!--Title-->
+  <title>Game Tradisional</title>
+  <!--Favicon-->
+  <link rel="icon" href="./assets/img/logo.png">
+</head>
+
+<body>
+
+
+  <!--Header & Navbar Section-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-style bd-navbar ">
+
+      <!--Logo-->
+      <a class="navbar-brand ml-5 px-5" href="/" aria-label="Logo Binar-Challenge">
+        <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Logo Game</title>
+          <rect width="49" height="49" fill="url(#pattern0)" />
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.00617284)" />
+            </pattern>
+            <image id="image0" width="162" height="162"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAAb+UlEQVR4Ae1dCXhcZdV+z50s3UtpG8Ku/IBopUkIbRI2W6TNLAmbFAT/HxWUBxRUFoH/x1/qI7ijuKA++KMoIEqRAs1kJm0hfdi6SG2p4gKIC3ZJWkixZGmSued/zp2Z9E5mycydu830fs+T3m++5XznnO/td5fvnPMRvJRVA/zYB2ejsvJEKHwSQCcCOBHgI8E0G4TZYFSCMA3AMIB3AOxNXCW/C8ArAL8Clf6MkZFX6MKn3sw62EFeQQe5/Cnic7T1eMTQCtDpAM4EcFRKg+J//AvAswA/Dx+6yN/1WvEky4PCQQ9EDgdPBdSLwbgAhONtnVbGayCshIIVFIj+1taxXTbYQQlE7gzMhYqPgvhKACe5ZE7+DKb7oODnFIzsdglPtrFxUAGRVy09CT7lejAuBzDJNi0XNtAACPchNvotal/7z8K6lm7rgwKIHPG/BypuB3AJAKVEpmsYoIcA+hqFOl8pEZ4Ns1nWQORV7XOgjHwJwFUAKgxrydmOowC+D6LlFIz821lWrBu9LIHIDEJn65UAfQPALOvUZyvlnQDfhGDXw0RgW0e2YbCyAyKvOucYKL4HADrLBv05MUQ31NGPldvzY1kBkcOt54HoPjBmO4EQ28YkvAnmKynU9YRtY1o8UFkAkTsD1YD6NTB9FkBZyJTHvDOIvwsot1Iwsj+P9q5uUvKTxuFgLRB7HKAmV2vaMuZ4I+A7n0KdsqVYsqmkgcidgfeBuRPAsSU7A6YwTv+ETw2Sv+tlU8g5QKRUvqmlqYZXtS4E+BkPhKIaPgYxeiaukzRVlURBSa6I3Bk4HcwRANNLQsv2MbkPRAEKRp63b0hzRiq5FZEj/gVgDpcQCFVAnuPwN3OmLCeV6aIbTUc5m7mvsqSAqJlpqRAQznSfKjNwxHgHCpop1NWM/ukngPD9DK3MLpoJFWFNV2ZTtpBeydya4xYz/ILtplqZlb8PwFYAfwWoF6TKTkc/mIbA6AV4D8i3B+rIW9S+5tUkCe5eNAkDk94CMDlZZtlVTMwUOq1ULHlKAoj8YmMleuasdcFuSQzga9E/46d08Qqxyi44cUdoFmi0DaDzAfgBTCmYSN4d+BkctuccOnXzSN5dHGpYGkAMB+4GWD5WO5zoxxSKXGMWE7yqfQpoJATCfwNoMIvuODrfo1DUBbobx9W4n64HInf4zwXhcQd2TAYB/BhQIyDfPqg8D1z5BLWv2jNOh1l/cnjpEpDvaKjqqxiY8QJdvCKWqbG2M8TaC01dpvqiyxjnUVv0yaLpWEjA1UDUdk1I/YMDe8d7oPI51N71khHd88rzD0H10L1gLNP17wXhF2DlJ5nsCzkcPBlQXwRQpetjTlb2phU+mfxdO80haD4VdwOx0/+Y5ktivtwTUbyMQtGHJ2qkr+dw8CyQeiOYKwGS22ytvl6XlxebdWDci6lDj9LidWJvqCXuDHwSzD+0xHaSsJKC0QuTY7nt6logcof/QhB+Y7/CeC/6Z8zJdhsdz4/2nKeMXA3gmwVbf+8fmTPexZQ7Aw0Ar0m5C8hnH6bFAL9//PgF/WZ8iNqijxXUx6bGrvyOGH+Ip+/YpINxw9A/8gZhZ+AiKCNibHBXwSCUUSdVictqSqJgZAuAn+kK/43JQzeD+W5dmbEs0Xc03RrrbWkvVwIRvuFbtP1TS0XPRpxqNQvvbNWJcn5kmQ/M9xS1w8P8MHe03sedrXfw8uUH5oL5Kd3wj9HidUMYmSR3hyLNvfiYuG511F2SPSC8SxjSPlwzXW8jOwNxp3c8CKa7AL4d6xZVTzj+1P73AaiZsF3uBpNAdAWYbsOC9deNNZ2yfy2A7dpv5ofkShc8vhegjrE2RjNM12s6Ntrfon4udCjim4taZfJXVAzEX0Ss6m5qXyVgLCyxOs9cE1z6Bq/yv0Tt0XXyAsMdga+D+FN4seVpoCvOm/asiA8Vxmha6+lQcQuAm9JqHCxw1cuK9tmjcuiNRDwZa9XCdCu1Rb5udBAOt/4cIPGPNjPthoKFFIj+nR9ZVoXp+yT/nH4ADvtlVQzpywrOyx44fMdQW7iv4L4WdXDXilg1dC2gBTWySNwxsq8gFBEPv4KT9m2T+SqAP1Jw54k7SASKFdy9qIUWa1uIKSDUuleo12BU2Qxg7sTksrTQAkfFPg3gjiwtbC92zTMidy+S/xTyGcSO9EsjLpncGfgPQH0dxOIr7bOI0VMxOFn2oceS/uWJWle/AShBQIwrikpXJ3ReFBGzOrsGiBicHABwpFmC5aSjYlvO+myVzOdYaznDe0F8HQKR1O+n4dZ7uGPpaUm2KNT5IkZjDWA8miwzcD0SA9XF3eINDJqti3uAyOoV2Zg0vbwCxoIcMTeazotGkP4A4GZwxXEU7PqBfrXmjsBtILoGpDyuhU5JMEDnrdlBbdFlYPVUAPcDeLtw3ujjhfexpocrXlZ4zTkzMVzRA2DizyZm6EHBmeNfAvIhy53+bjAW5dM2zzbfBKu/oLbVAsSUpBlCqKqEGvmkrmIPVCyTN2tdmZblR5ZNxtR/BwGSt+Hm8fVZfu/H8KTa+KehLC1sKnbHijhSeZ5tICxGsaqp8XNGQdSNgZl/ysLSXFCai+yh8HHaboz0p4tXDGL/6Dow/zELvUzF1ajef26mCrvL3AFEcJvdghsaj0jeVs1KFZor7NR3tnPY/934HvMB0hSM/AsVqjwXimuEpBiILqNg15cTv7WLrJzcGfiI9lmnunKn9oFc32DCvDt07/itWdsqm7pP3gAPnVBnxTYg7ADoDlSO/JKWrC34mSpuKT43CuDsYlnJ0n8tFNxIgejYy1TiltsNwoPy/Jjsp20JLlh/FUASbi+bpU+yea5rH/qnz813fz0XoWLqnAdix9JGkCJ2eBYn2gyCuFoae1FJcMcdofeCYoXc/gqVawTgz1Co68fJjuJeoP/4zNHWQxGjFab9h2D1VGpbbeZqn2Q976vzt2aiM/LmtqiG/INiQSjDU1v4T4D2llsUNzk6iz3jj7gjIDEdtZQCQnkpiUGiW5i3Kts2B0mJ0q/OA5FpQTpbFpQQmXi0BP/DAg5TSRJ/XwupkloKTN33JdPj/Ng1B+Nl0f12HohkmdOQTkwAKh+dWlDEL7bFr7oKrH5Lz2V8Zwef05eZkrdrDnIw6ygQtY197RCdHByaVUX4gBmkNMMMgnxEtiGRP2VVZP4MgEoLBj4xMRcWkM6PpKNAxOS9EsXLHsMLgjkR+quGZJ/ZrhMJCMwfk6lMAOWy/Ka14FYVmNr/roJ7mdjBWSCS7zgTZclESgWwBeDPYfKQ+A4XlTjsF4NdWZXsTB/WPtVM2SfO+HMsG5jVd1tGOw/C9qxG2RghPsLkAK8S8uN5gLpB9CxGK7bQeU9KeBDDiTtCx4FG5Ui0TwBwIi730Vi48T8BXGZpCHeF7DE4yTITzgKRldkgUwLkbwf4q1CrfmbI2jqLcuLFozcBNC66A/WA+BGIb4mKN7R2REeB8EGALgH4sJwkC61k/nmhXQpur9qwoZCDKWeBSGxC0HWOYHjyZZZt3CvKT8AsdpLy8V/cC+7E5KFv0uJ1cgKpPv0OwJPcveg2DFZ/XvNDsc5mUT+uOXlT5sI4K84+IzLJEbPGE6MT/TPOtwyEgj7NvZNkv3cACs6lYNftGUA4JoPUSRtpq/UZq3F5pti5KFI8Z4EI1biVs+wbD49cbjQqV0F6I9wJFSEKRGVHI6+ktS0pMBYxF3lpJHcjZ2/NuXnLXavSl8ZHScjdwXgtBSMbxvd+s2n+UaOk/A8o8QLDeKaC1a/M3rhNzmTWEgWiT3F46fmAIkGkLAw/lxyxdK8Or4iGFdcPrnjQcO8iO+5e2HDqKCkSkeEaMOZpf8A1UiZ1evIUWr0GUMUHpXCXVT2hMs87C0QFRg853Gj+23F+M72zpW6hqrA4wGf6pjdHJV6TEYxEFwCQUHfuTKQU9ZmrWKGcBaJqVHiy3uggg2Z3NZ3SrDCtzhnDm3BIRjAGI6sTkc2GMpB2vogNLwqm8O4sEGHUiUm1fTJ7WupPI1LFKHbiQPLZwNgW7QJDbtO2858HWoqy08yDfs4mzgLRx2MP9jm5HF9JdMT4Iit/9zTXnw6GnOsyMQiTjOQCI1hu00UGVEoOZNJVgaNBPJ0FIrGxk9kJC1KiZ5k0F5nI9C6cL85KAsIZmepzlmUDY6grivgzo6GA8LoxBwESYw6jz9oHSMVUc4xCDlAsKOcsEKv3/x1A4RHvGUdg4UYz3TozKq33tIazWFGKO+EqGxiDkQhIO1mgQDBqTvh3gugUBKNTKRQ5lkLRmSA6GmDZijTixsBQq1/PqASbCp33WQn7/wzgPQXLy3gOoehZemf0gmnk6LCzuX6REvegM+f7H2OvwrRk7qYtKf45HPEHoWJlfrGz6TdQK67OFVBeCyMyMOnzAMTbL98Ng79TKOqo9Y2zK2IcCEZvz2cgHJAQdqanXQvnn20qCIXDbCujtlujSqi5iVbGHyIYWZYLhNowi9eNUij6VRBJkKix+Nw5lUQGQ7DkJFpYpfNAZJJz6owl4q9w2H+rsc6Ze/U0N5xDirLKkp2QbGAMre4A0UVZwShxEYPRa8ev/tzYWLmzuf5dbzU2pr1EUTDyaxBdmtejj0qbMmvDvlLngahgfRHiCv9f5bD/C0XQGOsqIAT4CUtAmBwlGxiDkVWJ4zBSV0biuxGIflYPwlcDx1f3NNV/o7cy9pYC/G2kMvZWb3P9Ktl2TA4jVwpGHgXjw1kBPtZYNb4YjNEoLuM8EN+ZJkAs9rvap4pTA9DTVLfUchAmmcwGRjmUh8Secew2/W0Kdl2vB+GOxsYpM/qmdYAgz4FJ6yWFgbZRUjbsXlh3YnIYucZPEeCLdTT11ZIfwsAMx4/VdfxlRTTB4cBqgJeM11BBv0dHaum8pySQU8Gpt+UUP3NsJUB2+aLEecz2ArPKf4EWOTYUTXFvEBBWVMbCjJyBoHYoPvXsuc9v+4teEdwZaAezhLFLPVCI8RS1RSXcnqPJ+RVRE5+LDVLeh/2HGgrD29vcEGBWH7cdhCJ3tpWxPbqSxoFw1/z5U30VscgEIBSqR6iq0r2npfEkPbJIu/WzHPgz/tYvz8OOJ3cAsUL9Vd5veOkqexFQzjdil7h7YX2IwWKiZU84vHTes4JR37R30bxpNNUXGTM501dmyjMOj/Fo947mU96rr6a2rnDi22XyUYgBn8jveHIFEKl1tQRhEouW/JMcRVGhHkOh6AIKdT6Tf8d4y13N89tVBXIKU+qtqlBCZrTPsjImSfNg5QPgzOHokm3Sr1Trg9q9s6lBjuEYSyQf0uP73WIJtJ5CnY4YkIwxlMi4AohxXviXCZ7EBVR2XGSHQA7ZzpS2U1vkpng86UzVuct6WuouICjpz0u5u1lbmwOMrMS+CGMGIocpxN07F9TN0zNPYnyh7erwWKAnfb0TeVe8rIjg/MS501GxP4D+/Z108QHHJI62Ho9R5RIQS6iNAzaARMu0zxMFaq2nqeFDIA30zq+EmXjP8gIjYFJ89LTBQ4Z2Q6Ulh23aYui01Uxsml3mGiBOJJgW6qNqSGJFS3RZSXdQKPq/iXxel96mhos4DkIrwnbkxUNejbKBsanhfQqxgNGIu+oeUrCk5oWtW/PiweZGJQNE0Yt2zMMq/11Q0A5SzqRQpxzImFfqbalfxgy5/ZeGn04WMMoLiA+xpwEyEpzzTSJeUrP+JXFzcFVyJRB3nNF4jG9YnUVThv9as+7lFP9hlvfMO8+spduezdt+bldLw6XE/EABRgDumKQsYNx9+vz3qDFFVkYjdplvKVCXzN2wTfywXZNcBcTEc9B9AJoSGtrP4HsHJ826+d3r1iU/ORSkvJ7metn8l0gJ+VqiFETf8sbZwLiw7kRV0Z4ZjYQK6VNYWTJ34+8cjRKr151rgCj+IFlN8Ymejg0r7Uds3lyQJ1xPU8N/gVjOPi5NECZnKgsYe5vqT2CCrIwpe8zJbjmvWWjm7GNhpSs+30zoD8J8tmxtyRZXvrroba7/aFmAUATO8mmnZuPWV6H4FhEoHn8nX+UkaSq8VrwSC+lmVVvHV0TNHwRaTOiJTfEZz/CgGqzdtq0/l0J6W+quYKZ7S34lHC8kY6/qw9LDX9j6W33VroXz302K0g1A4k0Wmt4GIXjY+q0vFNrRzPaOroi9TXUSyD1/fxDCWbLVJVte2ZSwq7n+E8z0f2UHQhGYcIiiYo08xujlr9207W9q3BBCNgIKTTPFMSyxIBTa17T2jq2I4pTEiiKxZLKCKoeUzym+weDc5/+S4hS+47SGY30qi9WJc3vHOZg2sSrjKpaQX1ZGI2b/+4g5WLPxpfSjeU1kPBspR1bE3S0NH0g4JRkBochyhhqbHB1vmXzEC1v+AcrHEDSbOkqmPOMqJvLHKnyLQDDiCDWdiSLiMOaEFmxfEcUfxDxTfN5QOVLhP3Tz5pRTpMSgwXV7ydbMbsZVbPuC9x9d4auQt+njDQw7oAKhwzdsTTt40gCtvLvYCkSLTPE3j6hVrUdt2pRyjoqYeLnGuibv6TDU8B1S1WDNpm3P6nvvaak7Msbad8YUi219mxz5ASY6t3b9lqdytDG1yrZbs4Wm+I2VNLx2R2PjAYMIAHM3bQ0z4RZTteVOYtNYUaLi/qpnb876l7azqkoAeCOBn6YQ85PxOdNTtS5vCxB7WupaQWRdjEBCva8ytnbnmQ1z9arysVqwnaK+fwnlp4j7qzz26HmWt2mAjVrcTJE50+ZOT9SivOVAFH8QMASEky2SIUm2ThnBU7tOm1+TLIhBkRXhYElT5Nk7/vgTF7lvUf0hYEpxGShQGZNl7sSdosB+BTe39Bmxt6k+yKRZQdv4OYV3EdOvWMFRYIjjuqUyFqxx6ztIcKfvgrEbhE/CnJO9hhUVF8rjjlXsWzZJB9Gbq1Vz4za6wwz1otoN2yxxtrLk1ryrqf68g+TzidvAYiU/VTKnMrdWDGI6EDV/EMIjrnBKskJjBzfNKiI8InNsthpMBaLmD8IkrqHu9AcxW3sHJ70qMP1Km2sT5TcNiGKKD+KHPRCaODvuJVUlc63NuUk8mvKysqu57hICPVSWFi8mKbpMycQY/JHaDS/9ulj5cgJRwp69WTVaw6qvFqzWMnGNShDT9BoS5x2iWqhcA8IJAExbXYsVyutvqwZUMF6FQr1g3sVgcWjrVRjbiakXoB7yqTtnD1f00ubNWaMDpwAxcZrStwFIqAr5MDz2cdhW0bzBylUDvSDsBuOPFazeoD+lK8W1UjvSC1hWrlrw5HJcAzVgbXGbN0okRipjxw+n3E6ZOMWcynG2PQbKVgNM2KsXLmVFVIcrvqxUjvaTFqFe38yhPNMcgNu8N/Gi9T9MoJVuWWiY8U91uOI7eqlSnhH1FW7J72yqW6wQSaSwlNXbLfyVAB8xUujsmhe2uNoSyfVAlInuaa6XeC11JTDpbmRx82EbtqacmOpGJl2/yrzR0iLmY0ZCa7hR307wdGxCh06MnfeYtq+IL8+bVzVnipJfZAKlchpIXQ7A9L3NvDVUDg0JTyBGt4NHU7wes4m2Z0D917yXX04NcZytsUnltgJRfI5JbOW809xNmj7LyAyAcf1hG7dKkAJbkm1AlF2a3sqYvLLnHTbEFg14g2TTwOCefSOH2LUy2vaMuHMyDvdAmG3OXVk+edasSUZiMBoSxjYg9vUNyR5kSqxDQxx7nezSQH//9LcNnVtjhEHbgChLPDF9XDbEjTDq9bFVA70EvuKEyGu2HW5u2zOiXo17zzh5lv63l3ePBrjCx7PWbU3ZfnMPdx4nngY8DXga8DTgacDTgKcBTwOeBjwNeBrwNOBpwNOApwFPA54GPA14GvA04GnAYQ2k7KzwKn8LFIg7aam5kQ6D6X5qi3w9kz453HoxQLcZPMEgE0m7yt4B+E4KdUksobTEYf+tAD5agj49vVBxA7VH1yeFSgVih/9VkKEA4El6zl5VnKYXTpjhaOuhiJEcIFmq8Xj2g32HU1u4T6/cxKLh6CE9en4KzjNeo7aoBGbQUqrRQymDUMRROP18kZhPIlOUKghFqmoQp1u0Z5I1Pqel8e84rKUCsTRE8LgsQw14QCzDSS1FkTwgluKslSHPHhDLcFJLUSQPiKU4a2XIswfEMpzUUhTJA2IpzloZ8uwBsQwntRRF8oBYirNWhjyXGxDfKsM5KleRdusFKxcgMggr0T9jjV44L+9aDQwAfKOeu5SIsfoKg/k/gvlqVOBljFawQRqFd6scGabW1f2Fd5ywRxQKbkHM98aELXM18MWOhgqxDHLXaanMP4Ki3AVVsfdOMrV/kBavG9KrzFwgqvg0tXelnKSuH6zE8iMYnnQpXfC4Gc7mfbzy/EtRNSS3I3N1blypf0Wo69NEsG/ByMGrybdmHsgxVqlVDZgEQk3uBC0rVm2DeqVBt4BQBDAXiArdyZ2BlFPkDWrJ62a5Bvj93BG4hR9Z5rN8qDwGMPs2cY52+lDYb+8xGYRBMD1IocgtechsuIl2/C9BouEfkpMIoY+Yrq3ZsCWSs53TlcRfw9R9yznsH7SXFdoDVj9FbV0SpF9LZgNRiMoqa2+QJZbx+GbuDHRRMPJ0QjZTLwxQL+GnAA6dkDBjFoMf4mXL5tKKFbEJ2zvbYBIA+bMx8SwQ3Q9gzODX3FuzjaJkHIpVywJL9jU2zsgLhAcYm9X3+uvTDvz0cuM0IJbzY6m8gDgmlpcpNQ14QCy1GStTfj0glunElppYHhBLbcbKlF8PiGU6saUmlgfEUpuxMuXXA2KZTmypiZUKRIKcKu6lDBqYddxxckZMIefEDMwCrNt7V8gMY4wMkjpTlApE0NUAUmKsOMOW+0aVHRICrgOQz8GK+8B0NW3ePGKZJBubowAeADBq2Rg2Ek7Z4qNg5FFevvwxnPrbmTbyAFSOTMOocj0A+XNtqtmw9X4GfvH2GSfn1M/M537/NgGqlYLQ8uVC/3LuXnQV+qfKUcL2pbh9pWzRNZg1aAoQhWhCQLtXxT5m3IhOvxyH+y6zhLOCjgaw535vt36yipIwME0xMs3a2LyKPu4MXAfm58wiOe7WbBbZwulotnHsqtvMNO5eZNpecYKWafQK17DJPWKqqY8drgAidy2dymH/F1wWm9GHgep7+LEPzi52CjUaA9X3AHCF7V/R8nQtPRoKSUBX01LKrZk7AwEw/wDAcaaNkA8h1z5u0+Worrycw+5yNRGVsriLhQPfA/HlAMQyyL5kwXylABHMcmL5mI2YfZJ5IxWsgUhgMYivLbifSzuMvzV7IHTpRKWxZaHtZdpYNhSMB6INQ3pDeBpI14AHxHSdeCUOaMADogNK94ZM14AHxHSdeCUOaMADogNK94ZM14AHxHSdeCUOaMADogNK94ZM14AHxHSdeCUOaMADogNK94ZM18A4IFJPepMSKiFlTxq38dh/bg/7kca2riCWMX4hU4lb06diLRWIrF4JYJdOCaWSFZP8HyIQSYsYS+0d2wHcAHAJmtZrPN+QkCF1LkLR1ZrMVrojpI5o4i/qQRxrYzT/H4Ptq1zYnmaiAAAAAElFTkSuQmCC" />
+          </defs>
+        </svg>
+      </a>
+
+      <!--Menu Navigation-->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar4"
+        aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+          </path>
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar4">
+        <!--Menu One-->
+        <div class="navbar-nav ml-3">
+          <a href="#" class="nav-item nav-link ml-5 px-4" id="home">
+            HOME
+          </a>
+          <a href="#" class="nav-item nav-link px-4" id="work">
+            WORK
+          </a>
+          <a href="#" class="nav-item nav-link px-4" id="contact">
+            CONTACT
+          </a>
+          <a href="#" class="nav-item nav-link px-4" id="about-us">
+            ABOUT US
+          </a>
+        </div>
+        <!--Menu Two-->
+        <div class="collapse navbar-collapse d-flex flex-row-reverse" id="nav-right">
+          <ul class="navbar-nav px-lg-2 mt-3 mt-lg-0 dropdown p-2 bd-highlight ">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                SIGN UP
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">SIGN UP</a></li>
+                <li><a class="dropdown-item" href="#">LOGIN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <span class="d-none d-lg-block d-xl-block bold nav-link" style="color:aliceblue">|</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="assets/Vector.svg"> <span class="d-lg-none ml-3">Steam</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="assets/Vector.svg" alt="" srcset="">
+                <span class="d-lg-none ml-3">
+                  Xbox
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero One-->
+
+    <div class="row row-cols-1 ml-1 header-info">
+      <div class="col header-info-col">
+        <h1 class="header-title-info text-center">Play Traditional Game</h1>
+        <h3 class="mini-info text-center">Experience new tradition game play</h3>
+        <a href="./challenge-2-21/suit.html" class="btn btn-warning btn-lg header-info-button">
+        Play NOW || 
+        <i class="bi bi-dice-5"></i>
+        </a>
+      </div>
+      <div class="col align-self-end story-scroll-down">
+        <a href="#gallery" class="header-scroll-link-wrapper+">
+          <p class="header-scroll-toggle">
+            THE STORY
+          </p>
+          <i class="bi bi-caret-down story-scroll-down-img"></i>
+        </a>
+      </div>
+
+  </header>
+
+  <!--End of Main Header-->
+
+
+  <!--About & Gallery-->
+
+  <section class="gallery container" id="gallery">
+    <div class="row ml-5 gallery-content">
+      <div class="col-5  gl-left-side">
+        <h3 class="gallery-mini-info">
+          What's So Special ?
+        </h3>
+        <h1 class="gl-h1-info">
+          THE GAMES
+        </h1>
+      </div>
+
+      <div class="col-7  gl-right-side">
+        <div id="Indicatordot" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#Indicatordot" data-bs-slide-to="0" class="active rounded-circle"
+              aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#Indicatordot" data-bs-slide-to="1" aria-label="Slide 2"
+              class="rounded-circle"></button>
+            <button type="button" data-bs-target="#Indicatordot" data-bs-slide-to="2" aria-label="Slide 3"
+              class="rounded-circle"></button>
+            <button type="button" data-bs-target="#Indicatordot" data-bs-slide-to="3" aria-label="Slide 4"
+              class="rounded-circle"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="assets/requirements.png" class="d-block w-100" alt="slide 1">
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="slide 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="assets/the-games-bg.jpg" class="d-block w-100" alt="slide 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="assets/top-score-bg.png" class="d-block w-100" alt="slide 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev icon-costum-left" type="button" data-bs-target="#Indicatordot"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next icon-costum-right" type="button" data-bs-target="#Indicatordot"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--End About & Gallery-->
+
+  <!-- features section  -->
+  <section class="features ">
+    <div class="container">
+      <div class="row justify-content-end features-contents">
+        <div class="col-4 features-info mb-2">
+          <h3 class="features-info-title">
+            What's so special?
+          </h3>
+          <h1 class="features-info-content">
+            FEATURES
+          </h1>
+        </div>
+      </div>
+      <div class="row justify-content-end features-timeline">
+        <div class="col-5 features-timeline-content">
+          <div class="row timeline">
+            <div class="col-3 pt-2 mt-1 timeline-dot">
+              <img src="assets/Ellipse.svg">
+            </div>
+            <div class="col tl-info">
+              <h2 class="tl-info-title">
+                TRADITIONAL GAMES
+              </h2>
+              <p class="tl-info-content">
+                If you miss your childhood, we provide many traditional games here
+              </p>
+            </div>
+          </div>
+          <div class="row timeline">
+            <div class="col-3 pt-2 mt-1 timeline-dot">
+              <img src="assets/Ellipse-transparent.svg">
+            </div>
+            <div class="col tl-info">
+              <h2 class="tl-info-title">
+                GAME SUIT
+              </h2>
+            </div>
+          </div>
+          <div class="row timeline">
+            <div class="col-3 pt-2 mt-1 timeline-dot">
+              <img src="assets/Ellipse-transparent.svg">
+            </div>
+            <div class="col tl-info">
+              <h2 class="tl-info-title">
+                TBD
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of features section  -->
+
+  <!-- system requirements section  -->
+  <section class="sysreq">
+    <div class="container">
+      <div class="req-info-top">
+        <h5>Can My Computer Run This Game?</h5>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="rq-table-title">System Requirements</h1>
+
+          <!-- Table -->
+          <table class="table table-bordered table-content-sys">
+            <tbody>
+              <tr>
+                <td>
+                  <h2 class="requirements-info">OS:</h2>
+                  <p class="requirements-info-content">
+                    Windows 7 64-bit only<br>(No OSX support at this time)
+                  </p>
+                </td>
+                <td>
+                  <h2 class="requirements-info">Processor:</h2>
+                  <p class="requirements-info-content">Intel Core 2 Duo @2.4GHz or AMD Athlon X2 @ 2.8GHz</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 class="requirements-info">Memory:</h2>
+                  <p class="requirements-info-content">4 GB RAM</p>
+                </td>
+                <td>
+                  <h2 class="requirements-info">Storage:</h2>
+                  <p class="requirements-info-content">8 GB available space</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h2 class="requirements-info">Graphics:</h2>
+                  <p class="requirements-info-content">
+                    NVIDIA GeForce GTX 660 2GB or<br>AMD Radeon HD 7850 2GB
+                    DirectX11 (Shader Model S)
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End of table -->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Sysreq  -->
+
+  <!-- Score & Comments  -->
+
+  <section class="score" id="score">
+    <div class="container row">
+      <div class="col-lg-5 col-md-7 offset-md-2 mt-5 offset-sm-1 align-center score-left-side ">
+        <h1>Top Scores</h1>
+        <h2>This top score from various games provided on this platform</h2>
+        <a href="#" class="btn btn-warning">see more</a>
+      </div>
+
+      <!-- Twitter cards -->
+      <div class="col">
+        <div class="row justify-content-end features-timeline">
+          <div class="col-lg-4 col-md-7 offset-lg-6 offset-md-2 offset-sm-1 twittercards">
+            <div class="card text-white bg-dark mb-2 " id="card-1">
+              <div class="card-header row">
+                <img src="assets/evan.png" class="img-fluid float-left profilepic col-3 card-costum"
+                  alt="Evan Lahti">
+                <div class="col-6">
+                  <h3>Evan Lahti</h3>
+                  <h4>PC Gamer</h4>
+                </div>
+                <img src="assets/twitter.svg" class="img-fluid float-right col-2 " alt="twitter">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  "One of my gaming highlights of the year."
+                </h5>
+                <p class="card-text">October 18, 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row justify-content-end features-timeline">
+            <div class="card text-white bg-dark mb-2 " id="card-2">
+              <div class="card-header row">
+                <img src="assets/jada.png" class="img-fluid float-left profilepic col-3 card-costum"
+                  alt="Jada Griffin">
+                <div class="col-6">
+                  <h3>Jada Griffin</h3>
+                  <h4>Nerdreactor</h4>
+                </div>
+                <img src="assets/twitter.svg" class="img-fluid float-right col-2 " alt="twitter">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  "The next big thing in the world of streaming and survival
+                  games."
+                </h5>
+                <p class="card-text">December 21, 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-end features-timeline">
+          <div class="col-lg-5 col-md-7 offset-lg-5 offset-md-2 offset-sm-1 twittercards">
+            <div class="card text-white bg-dark mb-1 " id="card-3">
+              <div class="card-header row">
+                <img src="assets/aaron.png" class="img-fluid float-left profilepic col-3 card-costum"
+                  alt="Aaron Williams">
+                <div class="col-6">
+                  <h3>Aaron Williams</h3>
+                  <h4>Uproxx</h4>
+                </div>
+                <img src="assets/twitter.svg" class="img-fluid float-right col-2 " alt="twitter">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  "Snoop Dogg Playing The Wildly Entertaining 'SOS' Is
+                  Ridiculous
+                </h5>
+                <p class="card-text">December 24, 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Twitter cards -->
+    </div>
+  </section>
+
+  <!-- end of Score & Comments  -->
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl">
+          <figure>
+            <img src="./assets/img/skull.webp" alt="skull" id="skull">
+          </figure>
+        </div>
+        <div class="col-xl">
+          <div class="footer-content-right ">
+            <h3>Want to stay in touch?</h3>
+            <h1>Newsletter Subscribe</h1>
+            <p>
+              In case to start receiving our news, all you have to do is enter
+              your email address. Everything else will be taken care of you. We
+              will send you emails containing information about game. We don't
+              spam.
+            </p>
+          </div>
+          <div class="footer-content-left">
+            <form class="form row">
+              <div class="form-group col-md-7">
+                <label class="sr-only" for="email">email</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 pt-3 bg-dark" id="email"
+                  placeholder="youremail@binar.co.id">
+                <p>Your email address</p>
+              </div>
+              <div class="col-md-5 text-left mt-5">
+                <button class="btn btn-warning mb-3 w-100">
+                  Subscribe Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="navigation text-center" id="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 my-2 nav-item">
+          <a href="#"><span>Main</span></a>
+          <a href="#"><span>About</span></a>
+          <a href="#"><span>Game Features</span></a>
+          <a href="#"><span>System Requirements</span></a>
+          <a href="#"><span>Quotes</span></a>
+        </div>
+        <div class="col-4 my-2 social-media-logo">
+          <a href="https://facebook.com/"><span class="icon facebook">
+              <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.65382 19.1726H2.56282V9.67859H0.517822V6.40559H2.56282V4.44159C2.56282 1.77259 3.71782 0.183594 6.99582 0.183594H9.72582V3.45659H8.02082C6.74282 3.45659 6.65882 3.91459 6.65882 4.76859L6.65382 6.40559H9.74582L9.38382 9.67859H6.65382V19.1726Z"
+                  fill="white" />
+              </svg>
+            </span></a>
+          <a href="https://twitter.com/"><span class="icon twitter">
+              <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.2138 2.42967C20.4408 2.75167 19.6098 2.96667 18.7388 3.06467C19.6288 2.56467 20.3118 1.77267 20.6338 0.830668C19.7998 1.29267 18.8778 1.62867 17.8958 1.81067C17.1108 1.02467 15.9898 0.534668 14.7508 0.534668C12.3708 0.534668 10.4398 2.34367 10.4398 4.57367C10.4398 4.89067 10.4778 5.19967 10.5518 5.49467C6.96981 5.32567 3.79381 3.71767 1.66781 1.27467C1.29681 1.87167 1.08481 2.56467 1.08481 3.30567C1.08481 4.70567 1.84581 5.94367 3.00181 6.66767C2.29581 6.64567 1.63181 6.46467 1.04981 6.16167C1.04981 6.17967 1.04981 6.19467 1.04981 6.21367C1.04981 8.17067 2.53481 9.80267 4.50681 10.1737C4.14581 10.2657 3.76381 10.3137 3.37181 10.3137C3.09381 10.3137 2.82381 10.2897 2.56081 10.2437C3.10881 11.8467 4.70081 13.0157 6.58681 13.0487C5.11181 14.1317 3.25381 14.7767 1.23381 14.7767C0.885811 14.7767 0.542811 14.7577 0.205811 14.7207C2.11281 15.8657 4.37881 16.5357 6.81281 16.5357C14.7408 16.5357 19.0758 10.3797 19.0758 5.04267C19.0758 4.86667 19.0708 4.69367 19.0628 4.51967C19.9048 3.94967 20.6358 3.23867 21.2138 2.42967Z"
+                  fill="white" />
+              </svg>
+            </span></a>
+          <a href="https://youtube.com/"><span class="icon youtube">
+              <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.61 0.183594H5.98961C3.12627 0.183594 0.799805 2.55085 0.799805 5.4644V12.8973C0.799805 15.8163 3.12627 18.1781 5.98961 18.1781H20.6046C23.4733 18.1781 25.7944 15.8108 25.7944 12.8973V5.4644C25.7998 2.55085 23.4733 0.183594 20.61 0.183594ZM17.0959 9.54779L10.2575 12.8642C10.0731 12.9524 9.86705 12.82 9.86705 12.6103V5.7679C9.86705 5.55821 10.084 5.42578 10.2629 5.51958L17.1013 9.04564C17.3074 9.15048 17.302 9.44846 17.0959 9.54779Z"
+                  fill="#FF1313" />
+              </svg>
+
+            </span></a>
+          <a href="https://twitch.tv/"><span class="icon twitch">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M19.9602 13.6252V9.5538V0.680176H2.93894L0.811279 2.97688V15.0868H6.13043V18.845H8.47085L11.024 16.1307H17.407L19.9602 13.6252ZM7.40694 13.4165H4.00268C3.76864 13.4165 3.57715 13.2286 3.57715 12.9989V2.76817C3.57715 2.5385 3.76864 2.35059 4.00268 2.35059H17.6197C17.8537 2.35059 18.0452 2.5385 18.0452 2.76817V10.7022C18.0452 10.8171 18.0027 10.9215 17.9229 10.9998L15.5825 13.2965C15.5027 13.3748 15.391 13.4165 15.2793 13.4165H11.3697L8.07183 15.6401C8.00268 15.6871 7.91757 15.7132 7.83247 15.7132C7.76332 15.7132 7.69949 15.6976 7.63566 15.6662C7.49204 15.5932 7.40694 15.4522 7.40694 15.2956V13.4165Z"
+                  fill="white"></path>
+                <path
+                  d="M13.79 9.76274V5.58691H12.0878V9.76274H13.79ZM9.53465 9.76274V5.58691H7.83252V9.76274H9.53465Z">
+                </path>
+              </svg></span></a>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Footer -->
+      <div class="row content-justify-end footer">
+        <div class="col-lg-4">
+          <div class="d-inline">
+            <p>© 2018 Your Games, inc. All Rights Reserved</p>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 mb-2">
+          <div class="d-inline">
+            <a href="#"><span>Privacy Policy </span></a>|
+            <a href="#"><span>Terms of Services </span></a>|
+            <a href="#"><span>Code of Conduct</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- End of Footer -->
+    </div>
+  </div>
+
+  <!--Bootsrap JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

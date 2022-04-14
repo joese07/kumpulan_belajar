@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="padding: 10px">
+      <label> Angka Pertama </label><br />
+      <input type="number" class="angka-pertama" />
+
+      <br />
+
+      <label>Angka Kedua </label><br />
+      <input type="number" class="angka-kedua" />
+
+      <br />
+
+      <button class="tombol-tambah">+</button>
+      <button class="tombol-kurang">-</button>
+      <button class="tombol-kali">*</button>
+      <button class="tombol-bagi">/</button>
+
+      <p class="hasil"></p>
+    </div>
+    <script>
+      // element input angka
+      const elementAngkaPertama = document.querySelector(".angka-pertama");
+      const elementAngkaKedua = document.querySelector(".angka-kedua");
+
+      // elemen button
+      const elementTombolTambah = document.querySelector(".tombol-tambah");
+      const elementTombolKurang = document.querySelector(".tombol-kurang");
+      const elementTombolKali = document.querySelector(".tombol-kali");
+      const elementTombolBagi = document.querySelector(".tombol-bagi");
+
+      //elemen hasil
+      const elementHasil = document.querySelector(".hasil");
+
+      elementTombolTambah.addEventListener("click", function () {
+        const nilaiAngkaPertama = Number(elementAngkaPertama.value);
+        const nilaiAngkaKedua = Number(elementAngkaKedua.value);
+
+        const hasil = nilaiAngkaPertama + nilaiAngkaKedua;
+        elementHasil.textContent = hasil;
+      });
+
+      elementTombolKurang.addEventListener("click", function () {
+        const nilaiAngkaPertama = Number(elementAngkaPertama.value);
+        const nilaiAngkaKedua = Number(elementAngkaKedua.value);
+
+        const hasil = nilaiAngkaPertama - nilaiAngkaKedua;
+        elementHasil.textContent = hasil;
+      });
+
+      elementTombolKali.addEventListener("click", function () {
+        const nilaiAngkaPertama = Number(elementAngkaPertama.value);
+        const nilaiAngkaKedua = Number(elementAngkaKedua.value);
+
+        const hasil = nilaiAngkaPertama * nilaiAngkaKedua;
+        elementHasil.textContent = hasil;
+      });
+
+      elementTombolBagi.addEventListener("click", function () {
+        const nilaiAngkaPertama = Number(elementAngkaPertama.value);
+        const nilaiAngkaKedua = Number(elementAngkaKedua.value);
+
+        const hasil = nilaiAngkaPertama / nilaiAngkaKedua;
+        elementHasil.textContent = hasil;
+      });
+    </script>
+  </body>
+</html>

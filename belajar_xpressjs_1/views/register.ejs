@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/register" method="POST">
+      <label>Masukkan Email </label><br />
+      <input type="email" name="email" required /><br />
+      <label>Masukkan Password</label><br />
+      <input
+        type="password"
+        name="password"
+        id="pswd"
+        onchange="verifyPassword()"
+        required
+      />
+      <br />
+      <p></p>
+      <button type="submit">Daftar</button>
+    </form>
+    <script>
+      function verifyPassword() {
+        const pw = document.getElementById("pswd").value;
+        if (pw.length < 8) {
+          alert("pasword tidak boleh kurang dari 8 karakter");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
